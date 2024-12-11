@@ -1,0 +1,311 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+p, button, input, textarea {
+    font-family: 'Roboto', serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+:root {
+    --purple: #5722CD;         /* Paars */
+    --blue: #4845E4;           /* Blauw */
+    --pink: #ED4385;           /* Roze */
+    --black: #0C0C0C;          /* Zwart (voor standaard tekst) */
+    --light-purple: #F2F0FF;   /* Lichtpaars (voor grote zwevende woorden) */
+    --light-grey: #F3F6F9;     /* Lichtgrijs (voor achtergrond van projecten) */
+    --grey: #7A7A7A;           /* Grijs (voor service-tegel tekst) */
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, var(--blue), var(--purple));
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.button-1 {
+    background: transparent;
+    color: var(--light-purple);
+    cursor: pointer;
+    border: none;
+}
+
+.button-2 {
+    background: transparent;
+    color: var(--light-purple);
+    cursor: pointer;
+    border: none;
+}
+
+.button-3 {
+    background: transparent;
+    color: var(--light-purple);
+    cursor: pointer;
+    border: none;
+
+}
+
+.item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--light-purple);
+    margin-top: 70px;
+}
+
+.button-4 {
+    border-radius: 38px;
+    width: 230px;
+    height: 65px;
+    background-color: var(--pink);
+    color: var(--light-purple);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.item-2 img {
+    padding-top: 100px;
+}
+
+
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+.container-2 {
+    display: flex;             /* Activeer flexbox */
+    justify-content: center;   /* Centreer de inhoud horizontaal */
+    align-items: center;       /* Centreer de inhoud verticaal */
+    padding: 50px;             /* Optionele padding */
+}
+
+.item-3 {
+    display: flex;             /* Maak de binnenste container ook een flexbox */
+    flex-direction: column;    /* Stapel items verticaal */
+    max-width: 800px;          /* Beperk de breedte van de tekst */
+    text-align: center;        /* Centreer de tekst */
+    margin: 0 auto;            /* Centreer de div horizontaal */
+}
+
+.item-3 h2 {
+    font-size: 1.5rem;         /* Pas de grootte van de headers aan */
+    color: var(--purple);      /* Pas de tekstkleur aan */
+    margin-bottom: 5px;
+}
+
+.item-3 p {
+    font-size: 1rem;           /* Pas de tekstgrootte aan */
+    color: var(--black);            /* Gebruik een grijstint voor de tekst */
+    margin-top: 85px;
+}
+
+.item-3 a {
+    color: #4845e4;            /* Maak links blauw */
+    text-decoration: none; /* Onderstreep links */
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey); /* Optionele achtergrondkleur */
+    padding: 50px;
+}
+
+.article-image {
+    width: 100%;
+    height: 100%
+}
+
+.container-3 a {
+    text-decoration: none;
+}
+
+.article-1 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.article-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.article-3 {
+    display: flex;
+}
+
+.image {
+    display: flex;
+    box-shadow: -0px 10px 10px var(--grey);
+    align-content: center;
+}
+
+.item-4, .item-6, .item-8 {
+    align-content: center;
+}
+
+.item-4 {
+    margin-right: 160px;
+}
+
+.item-6 {
+    margin-left: 160px;
+}
+
+.item-8 {
+    margin-right: 160px;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 50px;
+    padding: 100px;
+}
+
+.container-4 h3 {
+    color: var(--purple);
+}
+
+.container-4 img {
+    width: 70px;
+}
+
+.container-4 article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
+    border: 2px solid var(--purple);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: -0px 10px 10px var(--grey);
+}
+
+.container-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-purple);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form-text {
+    text-align: left;
+    width: 260%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea[type="message"]{
+    height: 40px;  /* Vergroot de hoogte van de Name en Email velden */
+    width: 250%;
+    padding: 10px;  /* Voeg wat padding toe voor meer ruimte binnen de inputvelden */
+    margin-top: -5px;  /* Voeg wat ruimte toe tussen de p en het inputveld */
+    margin-bottom: -20px; /* Voeg wat ruimte toe tussen de inputvelden */
+    font-size: 16px;  /* Pas de font-grootte aan voor de inputvelden */
+}
+
+.form textarea[type="message"] {
+    height: 200px;  /* Maak het message veld 5 keer zo hoog als de andere velden */
+    width: 250%;
+    padding: 10px;
+    margin-top: -5px;  /* Zorg ervoor dat het message veld aansluit op de p-tag */
+    font-size: 16px;  /* Pas de font-grootte aan voor het message veld */
+    text-align: left; ;
+    vertical-align: top;
+    resize: none;
+}
+
+.button-5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 38px;
+    width: 150px;
+    height: 50px;
+    background-color: var(--pink);
+    color: var(--light-purple);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.container-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--light-purple);
+}
+
+.section-last {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, var(--blue), var(--purple));
+}
